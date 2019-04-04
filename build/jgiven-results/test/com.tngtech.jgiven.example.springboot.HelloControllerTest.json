@@ -1,0 +1,223 @@
+{
+  "className": "com.tngtech.jgiven.example.springboot.HelloControllerTest",
+  "name": "Hello Controller",
+  "scenarios": [
+    {
+      "className": "com.tngtech.jgiven.example.springboot.HelloControllerTest",
+      "testMethodName": "the_root_path_returns_greetings_from_JGiven",
+      "description": "the root path returns greetings from JGiven",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "get",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "get"
+                },
+                {
+                  "value": "/",
+                  "argumentInfo": {
+                    "argumentName": "path",
+                    "formattedValue": "\"/\""
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 48835321
+            },
+            {
+              "name": "the status is",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the status is"
+                },
+                {
+                  "value": "200 OK",
+                  "argumentInfo": {
+                    "argumentName": "status",
+                    "formattedValue": "OK (200)"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 249872
+            },
+            {
+              "name": "the content is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the content is"
+                },
+                {
+                  "value": "Greetings from JGiven!",
+                  "argumentInfo": {
+                    "argumentName": "content",
+                    "formattedValue": "\"Greetings from JGiven!\""
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 3824349
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "success": true,
+          "durationInNanos": 89377242
+        }
+      ],
+      "durationInNanos": 89377242,
+      "executionStatus": "SUCCESS"
+    },
+    {
+      "className": "com.tngtech.jgiven.example.springboot.HelloControllerTest",
+      "testMethodName": "the_path_foo_returns_not_found",
+      "description": "The path \u0027/foo\u0027 returns NOT FOUND",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "get",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "get"
+                },
+                {
+                  "value": "/foo",
+                  "argumentInfo": {
+                    "argumentName": "path",
+                    "formattedValue": "\"/foo\""
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1853671
+            },
+            {
+              "name": "the status is",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the status is"
+                },
+                {
+                  "value": "404 NOT_FOUND",
+                  "argumentInfo": {
+                    "argumentName": "status",
+                    "formattedValue": "Not Found (404)"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 575824
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "success": true,
+          "durationInNanos": 16586560
+        }
+      ],
+      "durationInNanos": 16586560,
+      "executionStatus": "SUCCESS"
+    },
+    {
+      "className": "com.tngtech.jgiven.example.springboot.HelloControllerTest",
+      "testMethodName": "the_test_path_returns_yes",
+      "description": "the test path returns yes",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "get",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "get"
+                },
+                {
+                  "value": "/test",
+                  "argumentInfo": {
+                    "argumentName": "path",
+                    "formattedValue": "\"/test\""
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1846371
+            },
+            {
+              "name": "the content is",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the content is"
+                },
+                {
+                  "value": "Yes!!",
+                  "argumentInfo": {
+                    "argumentName": "content",
+                    "formattedValue": "\"Yes!!\""
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 646564
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "success": true,
+          "durationInNanos": 28727641
+        }
+      ],
+      "durationInNanos": 28727641,
+      "executionStatus": "SUCCESS"
+    }
+  ],
+  "tagMap": {}
+}

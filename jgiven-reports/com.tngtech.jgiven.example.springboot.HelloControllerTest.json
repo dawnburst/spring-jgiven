@@ -1,0 +1,65 @@
+{
+  "className": "com.tngtech.jgiven.example.springboot.HelloControllerTest",
+  "name": "Hello Controller",
+  "scenarios": [
+    {
+      "className": "com.tngtech.jgiven.example.springboot.HelloControllerTest",
+      "testMethodName": "the_test_path_returns_yes",
+      "description": "the test path returns yes",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "get",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "get"
+                },
+                {
+                  "value": "/test",
+                  "argumentInfo": {
+                    "argumentName": "path",
+                    "formattedValue": "\"/test\""
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 81416067
+            },
+            {
+              "name": "get TestDto",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "get TestDto"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 33702717
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "success": true,
+          "durationInNanos": 146192572
+        }
+      ],
+      "durationInNanos": 146192572,
+      "executionStatus": "SUCCESS"
+    }
+  ],
+  "tagMap": {}
+}

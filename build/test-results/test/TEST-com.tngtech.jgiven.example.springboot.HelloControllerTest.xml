@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tngtech.jgiven.example.springboot.HelloControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-04-04T20:55:11" hostname="dawn-Laptop" time="2.461">
+  <properties/>
+  <testcase name="the_root_path_returns_greetings_from_JGiven" classname="com.tngtech.jgiven.example.springboot.HelloControllerTest" time="2.41"/>
+  <testcase name="the_path_foo_returns_not_found" classname="com.tngtech.jgiven.example.springboot.HelloControllerTest" time="0.019"/>
+  <testcase name="the_test_path_returns_yes" classname="com.tngtech.jgiven.example.springboot.HelloControllerTest" time="0.031"/>
+  <system-out><![CDATA[23:55:11.704 [Test worker] DEBUG org.springframework.test.context.junit4.rules.SpringClassRule - Applying SpringClassRule to test class [com.tngtech.jgiven.example.springboot.HelloControllerTest]
+23:55:11.713 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:55:11.727 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:55:11.749 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.tngtech.jgiven.example.springboot.HelloControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:55:11.756 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tngtech.jgiven.example.springboot.HelloControllerTest], using SpringBootContextLoader
+23:55:11.759 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.tngtech.jgiven.example.springboot.HelloControllerTest]: class path resource [com/tngtech/jgiven/example/springboot/HelloControllerTest-context.xml] does not exist
+23:55:11.760 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.tngtech.jgiven.example.springboot.HelloControllerTest]: class path resource [com/tngtech/jgiven/example/springboot/HelloControllerTestContext.groovy] does not exist
+23:55:11.761 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tngtech.jgiven.example.springboot.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:55:11.806 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.tngtech.jgiven.example.springboot.HelloControllerTest]
+23:55:11.877 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.tngtech.jgiven.example.springboot.HelloControllerTest]: using defaults.
+23:55:11.877 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:55:11.884 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+23:55:11.884 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+23:55:11.885 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a6131a9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@71db84ab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@235ee893, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7b0ee19e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@68f17b2f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@45225446, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@11ec3601, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1de237b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7e290f23, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@29fee4c4]
+23:55:11.886 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tngtech.jgiven.example.springboot.HelloControllerTest]
+23:55:11.886 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tngtech.jgiven.example.springboot.HelloControllerTest]
+23:55:11.889 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@54e3c5a2 testClass = HelloControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@37246937 testClass = HelloControllerTest, locations = '{}', classes = '{class org.springframework.mock.web.MockServletContext, class com.tngtech.jgiven.example.springboot.HelloTestContext, class org.springframework.mock.web.MockServletContext, class com.tngtech.jgiven.example.springboot.HelloTestContext}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@370d1bb, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5595edbe, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6a51aa3e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3fa9bc3d, org.springframework.test.context.web.socket.MockServerContainerContextCustomizer@70b5f413], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+23:55:11.938 [Test worker] DEBUG org.springframework.test.context.junit4.rules.SpringMethodRule - Applying SpringMethodRule to test method [public void com.tngtech.jgiven.example.springboot.HelloControllerTest.the_root_path_returns_greetings_from_JGiven() throws java.lang.Exception]
+23:55:11.940 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tngtech.jgiven.example.springboot.HelloControllerTest]
+23:55:11.941 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tngtech.jgiven.example.springboot.HelloControllerTest]
+23:55:11.957 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-04-04 23:55:12.229  INFO 7419 --- [    Test worker] c.t.j.e.springboot.HelloControllerTest   : Starting HelloControllerTest on dawn-Laptop with PID 7419 (started by dawn in /home/dawn/IdeaProjects/spring-jgiven/spring-boot)
+2019-04-04 23:55:12.231  INFO 7419 --- [    Test worker] c.t.j.e.springboot.HelloControllerTest   : No active profile set, falling back to default profiles: default
+2019-04-04 23:55:13.921  INFO 7419 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-04 23:55:14.197  INFO 7419 --- [    Test worker] c.t.j.e.springboot.HelloControllerTest   : Started HelloControllerTest in 2.233 seconds (JVM running for 3.045)
+2019-04-04 23:55:14.286  INFO 7419 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-04-04 23:55:14.287  INFO 7419 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-04-04 23:55:14.287  INFO 7419 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-04-04 23:55:14.364  INFO 7419 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-04-04 23:55:14.364  INFO 7419 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-04-04 23:55:14.365  INFO 7419 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-04-04 23:55:14.366  WARN 7419 --- [    Test worker] o.s.web.servlet.PageNotFound             : No mapping for GET /foo
+2019-04-04 23:55:14.397  INFO 7419 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-04-04 23:55:14.397  INFO 7419 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-04-04 23:55:14.397  INFO 7419 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+
+Test Class: com.tngtech.jgiven.example.springboot.HelloControllerTest
+
+ The path '/foo' returns NOT FOUND
+
+   When get "/foo"
+   Then the status is Not Found (404)
+
+
+ The root path returns greetings from JGiven
+
+   When get "/"
+   Then the status is OK (200)
+    And the content is "Greetings from JGiven!"
+
+
+ The test path returns yes
+
+   When get "/test"
+   Then the content is "Yes!!"
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
